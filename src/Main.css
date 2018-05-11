@@ -5,6 +5,15 @@ html, body {
 
 .wrapper {
   display: grid;
+  grid-template-columns: 100px auto 100px;
+  grid-template-rows: 50px 50px;
+  grid-gap: 3px;
+}
+
+.wrapper > div {
+  font-size: 3rem;
+  color: #ffeead;
+  text-align: center;
 }
 
 .wrapper {
