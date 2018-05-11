@@ -1,0 +1,21 @@
+html, body {
+  background-color: #ffeead;
+  margin: 10px;
+}
+
+.wrapper {
+  display: grid;
+}
+
+.wrapper {
+  background-color: #96ceb4;
+}
+
+.wrapper > div:nth-child(2n) {
+  background-color: #ffcc5c;
+}
+
+.wrapper > div:nth-child(4n) {
+  background-color: #ff6d68;
+}
+
