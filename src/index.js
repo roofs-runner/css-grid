@@ -1,13 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Grid from './Grid';
+import Grid1 from './Grid1';
 
 const Index = () => {
-  return (
-    <div>
-      <Grid/>
-    </div>
-  )
+  return <Grid1/>
 };
 
 ReactDOM.render(<Index />, document.getElementById("index"));

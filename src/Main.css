@@ -1,30 +1,57 @@
 html, body {
   background-color: #ffeead;
-  margin: 10px;
+  margin: 0;
+  height: 100%;
+}
+
+#index {
+  height: 100%;
 }
 
 .wrapper {
+  height: 100%;
   display: grid;
-  grid-template-columns: 100px auto 100px;
-  grid-template-rows: 50px 50px;
+  /*grid-template-columns: repeat(3, 1fr);*/
+  /*grid-template-rows: 50px 50px;*/
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 40px auto 40px;
   grid-gap: 3px;
+  grid-template-areas:
+    ". h h h h h h h h h h h"
+    "m c c c c c c c c c c c"
+    "m f f f f f f f f f f .";
 }
 
 .wrapper > div {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #ffeead;
   text-align: center;
 }
 
 .wrapper {
-  background-color: #96ceb4;
+  /*background-color: #b54fce;*/
 }
 
-.wrapper > div:nth-child(2n) {
+.header {
+  grid-area: h;
+  /*grid-column: 1 / -1;*/
   background-color: #ffcc5c;
 }
 
-.wrapper > div:nth-child(4n) {
+.content {
+  grid-area: c;
+  /*grid-column: 2 / -1;*/
   background-color: #ff6d68;
 }
 
+.menu {
+  grid-area: m;
+  background-color: aquamarine;
+}
+
+/*if you don't know the number of columns*/
+.footer {
+  grid-area: f;
+  /*grid-column: 1 / -1;*/
+  background-color: cadetblue;
+}

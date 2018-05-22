@@ -4,12 +4,10 @@ import styles from "./Main.css";
 const Grid = () => {
   return (
     <div className="wrapper">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
-      <div>6</div>
+      <div className="header">HEADER</div>
+      <div className="menu">MENU</div>
+      <div className="content">CONTENT</div>
+      <div className="footer">FOOTER</div>
     </div>
   )
 };
